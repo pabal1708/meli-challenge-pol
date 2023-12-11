@@ -1,0 +1,257 @@
+html,
+body {
+  background-color: #ededed;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.layout {
+  background-color: #ededed;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  background-color: #009ee3;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 2px 3px 4px rgb(179, 178, 178);
+}
+
+.header-back-button {
+position: absolute;
+left: 0;
+}
+
+.header-logo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.button-container {
+  display: flex;
+
+}
+
+.button {
+  background-color: #3483fa;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 600;
+  padding: 8px;
+  display: flex;
+  gap: 5px;
+  padding: 10px 16px 10px 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #1d4786
+}
+
+.button:active {
+  background-color: #0f2341
+}
+
+.button-secondary {
+  color: #009ee3;
+  border: none;
+  border-radius: 4px;
+  margin-right: 20px;
+  font-weight: 600;
+  background-color: rgba(71, 154, 209, .15);
+  padding: 8px;
+  padding: 10px 16px 10px 16px;
+  cursor: pointer;
+}
+
+.button-secondary:hover {
+  background-color: rgba(42, 88, 119, 0.15);
+}
+
+.button-secondary:active {
+  background-color: rgba(31, 63, 85, 0.15);
+}
+
+.button-chevron{
+  padding-left: 10px;
+}
+
+.dropdown-list {
+  background: white;
+  z-index: 1;
+  position: absolute;
+  right: 15px;
+  top: 115px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px rgb(214, 213, 213);
+  padding: 16px;
+}
+
+.dropdown-button-container {
+  display: flex;
+  justify-content: center;
+  margin: 15px 20px 5px 20px;
+  gap: 8px
+}
+
+.dropdown-checkbox-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.dropdown-checkbox {
+  padding-bottom: 15px;
+}
+
+.dropdown-checkbox-input {
+  margin-right: 24px;
+}
+
+
+.list-item-container {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.list-item-description {
+  display: flex;
+  flex-direction: column;
+  margin: 10px
+}
+
+.list-item-data {
+  font-size: 17px;
+  font-weight: 600;
+  color: #282929;
+}
+
+.list-item-box {
+  font-size: 15px;
+  color: #929696;
+}
+
+.list-item-amount {
+  display: flex;
+  margin: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #282929;
+  gap: 10px
+}
+
+.list-item-main {
+  display: flex;
+}
+
+.type-icon-small {
+  border-radius: 50%;
+  border: 1px solid #efefef;
+  height: 40px;
+  width: 40px;
+  min-height: 30px;
+  min-width: 30px;
+  overflow: hidden;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.type-icon {
+  border-radius: 50%;
+  border: 1px solid #ccc9c9;
+  height: 60px;
+  width: 60px;
+  min-height: 30px;
+  min-width: 30px;
+  overflow: hidden;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.filter-bar-container {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin: 10px 16px 10px 16px;
+}
+
+.filter-bar-amount {
+  font-size: 30px;
+}
+
+
+.detail-modal-container {
+  background: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 32px;
+  padding: 32px;
+  box-shadow: 2px 3px 4px rgb(209, 208, 208);
+}
+
+.detail-modal-text {
+  font-size: 32px
+}
+
+.detail-modal-description {
+  font-size: 24px;
+}
+.detail-modal-skeleton{
+  display:flex
+}
+
+
+@media (min-width: 800px) {
+  .detail-modal-container {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px;
+    padding: 110px;
+    width:50%
+  }
+.view-detail-modal{
+  display: flex;
+  justify-content: center;
+}
+  .list-item-container {
+    margin: 0px 30px 0px 30px;
+  }
+
+  .filter-bar-container {
+    margin: 20px 30px 20px 30px;
+  }
+
+  .dropdown-list {
+    top: 125px;
+    right: 28px;
+  }
+}

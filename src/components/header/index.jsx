@@ -6,7 +6,7 @@ const Header = ({ pathname }) => {
   const isDetail = pathname === '/detail'
   return (
     <div className="header" data-testid="main-header">
-      <a className='header-back-button' href={`http://localhost:3000/`}>
+      <a className='header-back-button' href={`https://meli-challenge-pol.vercel.app/`}>
         {isDetail && (
           <BackArrow />
         )}

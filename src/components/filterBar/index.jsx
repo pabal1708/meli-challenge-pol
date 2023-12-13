@@ -26,9 +26,11 @@ useEffect(() => {
 
   return (
     <div className="filter-bar-container" data-testid="filter-bar">
+        {totalAmount && (
         <div className='filter-bar-amount'> $
        {totalAmount}
        </div>
+       )}
        <Dropdown dropdownfilterData={dropdownfilterData} text="Filtros"/>
     </div>
   )

@@ -12,7 +12,7 @@ const ListItem = () => {
   return (
     <>
       {filteredTransactions?.map(({ id, type, title, description, amount, index }) =>
-        <a key={index} className="list-item-container" href={`http://localhost:3000/detail?id=${id}`} data-testid="list-item">
+        <a key={index} className="list-item-container" href={`https://meli-challenge-pol.vercel.app/detail?id=${id}`} data-testid="list-item">
           <div className="list-item-main">
             <IconSelector type={type} size="small" />
             <Description title={title} description={description} />

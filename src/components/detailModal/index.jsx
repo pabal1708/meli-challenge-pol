@@ -9,7 +9,7 @@ const DetailModal = ({ id }) => {
 
     const fetchDetail = async () => {
         try {
-            await fetch(`http://localhost:3000/api/transactions/${id}`)
+            await fetch(`/api/transactions/${id}`)
                 .then(response => response.json())
                 .then(data => setDetailTransaction(data))
             setSkeleton(true)

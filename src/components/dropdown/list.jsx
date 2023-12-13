@@ -10,12 +10,12 @@ import { useRouter } from 'next/router'
 
     
     const pushFilter = () =>{
-    router.push(`http://localhost:3000/?filter=${filterParam}`)
+    router.push(`/?filter=${filterParam}`)
     setIsOpen(false)
     }
 
     const cleanFilter = () => {
-        router.push("http://localhost:3000/")
+        router.push("https://meli-challenge-pol.vercel.app/")
         setIsOpen(false)
     }
   

@@ -19,3 +19,5 @@ Implemetancion basica de los Head de Netx Js
 
 Persistencia
 Uso de context de react
+
+** Puedes verlo deployado en :  https://meli-challenge-pol.vercel.app/ **

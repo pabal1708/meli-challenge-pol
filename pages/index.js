@@ -1,8 +1,8 @@
 import Home from '../src/views/home'
-import { fetchTransaction } from '../lib/fetch';
+import transactionsMock from '../pages/api/mock/transactions'
 
-export async function getStaticProps() {
-  const transactions = await fetchTransaction()
+export  const getStaticProps = async () => {
+  const transactions = transactionsMock
 
   return { props: { transactions } }
 }

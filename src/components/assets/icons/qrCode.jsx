@@ -6,7 +6,7 @@ const QrCode = ({ isSmall }) => {
   const height = isSmall ? "20" : "30";
 
   return (
-    <svg width={width} height={height} viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg alt="qrTtype" width={width} height={height} viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M5.0625 7.25V5.5625H6.75V7.25H5.0625Z" fill="black" fill-opacity="0.9" />
       <path fill-rule="evenodd" clip-rule="evenodd" d="M1.6875 2.1875H10.125V10.625H1.6875V2.1875ZM3.375 3.875V8.9375H8.4375V3.875H3.375Z" fill="black" fill-opacity="0.9" />
       <path d="M5.0625 22.4262V20.7725H6.75V22.4262H5.0625Z" fill="black" fill-opacity="0.9" />
